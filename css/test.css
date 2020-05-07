@@ -1,0 +1,17 @@
+body{
+    background-color: beige;
+}
+h1{
+    font-size: 30px;
+    color:#3AB9C6;
+}
+h2{
+    color: #F15759;
+    font-size: 20px;
+}
+.big{
+    font-size: 60px;
+}
+h1 span{
+    color: crimson;
+}
