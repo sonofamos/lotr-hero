@@ -5,11 +5,18 @@ body{
     line-height: 30px;
 }
 
+/* Header information */
+/* This is how you write a comment in CSS*/
+/* You can also hit Command + / */
+
 header{
     background-color: blue;
     text-align: center;
+/*Padding is the breathing space given between the border and the content*/
     padding-top: 50px;
     padding-bottom: 50px;
+/*Margin is the breathing space for the element itself aka personal space*/
+    margin: 20px;
 }
 
 h1, h2{
@@ -41,6 +48,7 @@ h2{
     font-size: 25px;
     color: tomato;
     margin: 40px 0 10px;
+    text-align: right;
 }
 
 a{
@@ -56,6 +64,7 @@ footer{
     background-color: blue;
     text-align: center;
     padding: 25px;
+    margin: 20px 0;
 }
 
 footer p{
@@ -74,4 +83,112 @@ p.caption{
     color: #999999;
     font-style: italic;
     margin-top: 0;
+}
+
+blockquote{
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.blue-box{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid red;
+    border-bottom: 10px dotted green;
+/*Box sizing allows you to change the border-level settings rather than the content-level*/
+/*Without border sizing of a border box, the padding and margins will all be taken into the box size (aka the width)*/
+    box-sizing: border-box;
+}
+
+.h3element{
+    background-color: indianred;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    width: 500px;
+    /* Margin of auto like below will allow the browser to center it and work the formatting out for you.*/
+    margin: 0 auto;
+    border: 5px dashed orange;
+}
+
+h3{
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
+/*Negatvive elements can help you to place other text or div sections over each other. Not sure the purpose just yet*/
+.negative{
+    background-color: violet;
+    margin: 50px 0 100px 0;
+    padding: 20px;
+}
+
+input[type=text]{
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image1{
+    background-color: white;
+    width: 25%;
+    margin: 20px;
+    /*Clear: left would put the next item on a new line aka a page break. Makes sure you don't have two images on the same line.*/
+    float: right;
+}
+
+.image2{
+    background-color: white;
+    width: 25%;
+    margin: 15px;
+/*overflow is an interesting command for images as well*/
+    float: left;
+/*The two transform commands below will do the same thing*/
+    transform: translateX(60px) translateY(20px);
+    transform: translate(60px 20px);
+}
+
+.box-1{
+    background-color: black;
+}
+
+.box-1::after{
+    /*The content feature below cannot be highlighted or selected*/
+    content:'Hello there!';
+    color: greenyellow;
+}
+
+.box-2{
+    color: white;
+}
+
+/* The Z-Index determines the depth of an object*/
+
+/*We are creating a button now.*/
+
+.popup{
+    position: fixed;
+    top 0;
+    bottom: 0;
+    left: 0;
+    right: 0in;
+}
+
+.popup .blanket{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+}
+
+.popup .content{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 300px;
 }
