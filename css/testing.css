@@ -64,7 +64,7 @@ footer p{
     background-color: rgb(100, 237, 118);
     height: 150px;
     position: sticky;
-    bottom: 25px;
+    top: 25px;
 }
 
 .box-3{
