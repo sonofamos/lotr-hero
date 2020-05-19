@@ -9,6 +9,11 @@ h1{
     font-size: 50px;
 }
 
+h2{
+    font-weight: 300;
+    font-size: 45px;
+}
+
 .fellowship-banner h1{
     color: white;
     margin: 14px 0 20px;
@@ -37,37 +42,36 @@ h3{
 }
 
 .fellowship-banner{
-    background-color: #4397FC;
-    min-height: 100vh;
-    padding: 50px 20px;
+    background: linear-gradient(red,blue);
+    min-height: 80vh;
+    padding: 50px 10px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
 
 .character1{
-    background: url('../img/aragorn.png') no-repeat 0 0;
+    background: url('../img/aragorn1.png') no-repeat 0 0;
     background-size: 100%;
     width: 368px;
     height: 543.5px;
-    position: absolute; top: 120px; right: 90px;
+    position: absolute; top: 50px; right: 75px;
 }
 
 .character2{
-    background: url('../img/fellowship1.png') no-repeat 0 0;
+    background: url('../img/frodo.png') no-repeat 0 0;
     background-size: 100%;
     width: 420px;
     height: 415px;
-    position: absolute; top: 210px; right: 250px;
+    position: absolute; top: 150px; right: 200px;
 }
 
 .character3{
-    background: url('../img/one-ring2.png') no-repeat 0 0;
+    background: url('../img/gandalf.png') no-repeat 0 0;
     background-size: 100%;
     width: 364px;
     height: 398.5px;
-    position: absolute; bottom: 75px; right: 90px;
-    background-color: transparent;    
+    position: absolute; top: 250px; right: 50px;
 }
 
 a.cta,
@@ -91,11 +95,11 @@ button.cta.alt{
 }
 
 .wrapper{
-    width: 960px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-/*
+/* All of the above coding is for the following HTML banner...
 
  <div class="fellowship-banner">
             <div class="wrapper">
@@ -112,4 +116,80 @@ button.cta.alt{
                 <div class="character2"></div>
                 <div class="character3"></div>
         </div>
+*/
+
+nav{
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+}
+
+nav .logo{
+    display: block;
+    width: 358px;
+    height: 84px;
+    position: absolute; top: 50%; left: 30px;
+    margin-top: -40px;
+    background: url('../img/lotr-logo.png') no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+
+nav ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+    padding: 35px 10px;
+    line-height: 30px;
+}
+
+/*All of the above coding is for the nav bar...
+
+<nav>
+<a href="#" class="logo">The Fellowship</a>
+<ul>
+    <li><a href="#">Sign Up!</a></li>
+    <li><a href="#fellows">Fellows</a></li>
+    <li><a href="#read-more">More Info</a></li>
+</ul>
+*/
+
+.more-info{
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+/*A ll of the above coding is for the read-more section...
+
+        <div class="more-info" id="read-more">
+            <h2>Join the Fellowship</h2>
+            <p>The Fellowship is comprised of 9 members. They are bold and brave and courageous, and have set out to destroy <span class="highlight"> Ring of Power.</span> Think you have what it takes to join the Fellowship of the Ring?</p>
+            <button class="cta">Sign Me Up!</button>
+        </div>
+
 */
