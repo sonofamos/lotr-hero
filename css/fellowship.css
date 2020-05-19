@@ -85,6 +85,15 @@ button.cta{
     padding: 20px 30px;
     border-radius: 10px;
     text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+a.cta:active,
+button.cta:active{
+    opacity: .7;
 }
 
 a.cta.alt,
@@ -124,6 +133,7 @@ nav{
     box-shadow: 0 5px 8px rgba(0,0,0,.2);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav .logo{
@@ -201,7 +211,7 @@ p{
     font-weight: bolder;
 }
 
-/*A ll of the above coding is for the read-more section...
+/* All of the above coding is for the read-more section...
 
         <div class="more-info" id="read-more">
             <h2>Join the Fellowship</h2>
@@ -210,3 +220,118 @@ p{
         </div>
 
 */
+
+.sep{
+    width: 470px;
+    height: 10px;
+    background-color: #111111;
+    margin: 70px auto;
+}
+
+.nb-list{
+    width: 445px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: lightgray;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+.fellows h3{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.nb-list li.gray{background-color: black;}
+.nb-list li.nothing{background-color: #fff;}
+.nb-list li.blue{
+    background-color: blue;
+    color: #111111;
+}
+.nb-list li.green{background-color: green;}
+.nb-list li.brown{background-color: brown;}
+.nb-list li.red{background-color: red;}
+.nb-list li.yellow{background-color: yellow;}
+
+.nb-list li.dragging{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    right: -50px;
+    transform: rotate(6deg);
+    box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+
+.nb-list li.dragging:after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../img/pointer.png') no-repeat 0 0;
+    background-size: 100%;
+    bottom: -30px;
+    left: 85%;
+    transform: rotate(-30deg);
+}
+
+.fellowship-image{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    color: rgba(0,0,0,.4);
+    font-size: 20px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
+
+footer a{
+    color: rgba(0,0,0,.4);
+}
+
+/* All of the above coding is for the separator and the Team section...
+
+ <div class="sep">
+        </div>
+
+        <div class="fellows" id="fellows">
+            <ul class="nb-list">
+                <li class="gray">Gandalf the Grey</li>
+                <li>&nbsp;</li>
+                <li class="blue dragging">Aragorn II Elessar</li>
+                <li class="green">Legolas Greenleaf</li>
+                <li class="brown">Gimli son of Gloin</li>
+                <li class="red">Boromir son of Denethor</li>
+                <li class="yellow">Frodo Baggins</li>
+                <li class="gray">Samwise Gamgee</li>
+                <li class="blue">Meriadoc Brandybuck</li>
+                <li class="green">Peregrin Took</li>
+            </ul>
+            <h3>What you need to know<br>
+                About the Team</h3>
+                <p>Formed after the Council of Elrond, the Fellowship consisted of nine members: four Hobbits, two Men, one Elf, one Dwarf, and one Wizard. It was the only known organisation ever formed in the history of Middle-earth to hold members of each of these races within it (and with the departure of the Elves and the Wizards from Middle-earth, there would never be another like it), who largely lived and acted independently of one another.</p>
+                <p>This number was chosen to match the number of Ringwraiths, or Nazgûl. Merry and Pippin were never intended to be a part of the Fellowship, with Elrond initially considering two Elf-lords from his own house. He wished to send the two younger hobbits back to the Shire as messengers to warn other Hobbits of the growing evil. However, the Halflings persevered: Merry was chosen and Gandalf convinced Elrond of the loyalty of Pippin.</p>
+                <p>Fellowship of the Ring was formed by Elrond after the Council of Elrond. The Fellowship, being led mainly by Gandalf, headed down the path to Mordor.</p>
+        </div>
+
+*/
+
+.popup{
+    display: none;
+}
