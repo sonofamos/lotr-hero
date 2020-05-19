@@ -95,7 +95,7 @@ button.cta.alt{
 }
 
 .wrapper{
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -182,6 +182,23 @@ p{
     font-weight: bold;
     font-size: 30px;
     margin: 30px 0;
+}
+
+.more-info p{
+    margin: 18px 0 35px;
+}
+
+.more-info h2{
+    margin: 60px 0 0 0;
+}
+
+.highlight{
+    background-color: #4CC780;
+    color: #EBDE3C;
+    padding: 8px 8px 0 8px;
+    line-height: 50px;
+    display: inline;
+    font-weight: bolder;
 }
 
 /*A ll of the above coding is for the read-more section...
