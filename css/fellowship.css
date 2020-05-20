@@ -42,8 +42,7 @@ h3{
 }
 
 .fellowship-banner{
-    background: linear-gradient(green,blue);
-    min-height: 80vh;
+    background: linear-gradient(blue,green);
     padding: 50px 10px;
     box-sizing: border-box;
     position: relative;
@@ -197,10 +196,12 @@ p{
     font-weight: bold;
     font-size: 30px;
     margin: 30px 0;
+    text-align: justify;
 }
 
 .more-info p{
     margin: 18px 0 35px;
+    text-align: center;
 }
 
 .more-info h2{
