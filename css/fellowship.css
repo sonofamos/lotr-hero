@@ -42,7 +42,7 @@ h3{
 }
 
 .fellowship-banner{
-    background: linear-gradient(red,blue);
+    background: linear-gradient(green,blue);
     min-height: 80vh;
     padding: 50px 10px;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ h3{
     background-size: 100%;
     width: 368px;
     height: 543.5px;
-    position: absolute; top: 50px; right: 75px;
+    position: absolute; top: 50px; right: 200px;
 }
 
 .character2{
@@ -63,7 +63,7 @@ h3{
     background-size: 100%;
     width: 420px;
     height: 415px;
-    position: absolute; top: 150px; right: 200px;
+    position: absolute; top: 150px; right: 300px;
 }
 
 .character3{
@@ -71,7 +71,7 @@ h3{
     background-size: 100%;
     width: 364px;
     height: 398.5px;
-    position: absolute; top: 250px; right: 50px;
+    position: absolute; top: 250px; right: 175px;
 }
 
 a.cta,
@@ -104,6 +104,11 @@ button.cta.alt{
 }
 
 .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper2{
     width: 1000px;
     margin: 0 auto;
 }
@@ -203,8 +208,8 @@ p{
 }
 
 .highlight{
-    background-color: #4CC780;
-    color: #EBDE3C;
+    background-color: green;
+    color: white;
     padding: 8px 8px 0 8px;
     line-height: 50px;
     display: inline;
@@ -234,7 +239,7 @@ p{
     box-sizing: border-box;
     background-color: lightgray;
     float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 50px 25px 0;
     position: relative;
 }
 .fellows h3{
